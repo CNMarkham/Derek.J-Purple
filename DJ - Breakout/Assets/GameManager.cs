@@ -18,4 +18,4 @@ public class GameManager : MonoBehaviour
             Instantiate(brickPrefab, new Vector2(x * xSpace + xOffset, 4.5f), Quaternion.identity);
         }
     }
-}//Instantiate(brickPrefab, Vector2.zero, Quaternion.identity);
+}
