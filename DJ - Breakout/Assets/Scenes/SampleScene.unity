@@ -304,7 +304,7 @@ Transform:
   m_GameObject: {fileID: 460164904}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.12, y: -2.89, z: 0}
+  m_LocalPosition: {x: -1.12, y: -3.7, z: 0}
   m_LocalScale: {x: 2.5, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -864,7 +864,7 @@ Transform:
   m_GameObject: {fileID: 1483995723}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.14, y: -1.8599999, z: 0}
+  m_LocalPosition: {x: -1.14, y: -2.9, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -912,7 +912,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b220c98ac137cb4d8f40827aa9803aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brickPrefab: {fileID: 771729729251770476, guid: 0407f98aaccc4d847ab28fb93cbbb92c, type: 3}
+  Brick1: {fileID: 1715314424912720583, guid: 0856508b35803dd4a9f4faf1e57fa64c, type: 3}
+  Brick2: {fileID: 8756264399546501418, guid: e99e4c00a67a20d4fb166d0ce8e6772c, type: 3}
+  Brick3: {fileID: 1670257244481403989, guid: 96636f33c11948a4fb7c7dca745a3f79, type: 3}
   xSpace: 2.2
   xOffset: -9.9
 --- !u!4 &1944150859

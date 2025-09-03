@@ -13,14 +13,23 @@ public class Score : MonoBehaviour
         score = 0;
     }
 
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Brick"))
         {
+            GameObject nextBrick = collision.gameObject.GetComponent<Brick>().nextBrick;
             Destroy(collision.gameObject);
             score++;
             scoreText.text = score.ToString();
+
+            if (nextBrick != null)
+            {
+                Instantiate(nextBrick,
+                        collision.gameObject.transform.position,
+                        Quaternion.identity);
+            }
         }
+
+        
     }
 }

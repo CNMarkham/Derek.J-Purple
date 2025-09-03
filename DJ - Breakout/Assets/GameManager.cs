@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject brickPrefab;
+    public GameObject Brick1;
+    public GameObject Brick2;
+    public GameObject Brick3;
 
     public float xSpace;
     public float xOffset;
@@ -13,9 +15,9 @@ public class GameManager : MonoBehaviour
     {
         for (int x = 0; x < 9; x++)
         {
-            Instantiate(brickPrefab, new Vector2(x * xSpace + xOffset, 3), Quaternion.identity);
-            Instantiate(brickPrefab, new Vector2(x * xSpace + xOffset, 3.75f), Quaternion.identity);
-            Instantiate(brickPrefab, new Vector2(x * xSpace + xOffset, 4.5f), Quaternion.identity);
+            Instantiate(Brick1, new Vector2(x * xSpace + xOffset, 3), Quaternion.identity);
+            Instantiate(Brick2, new Vector2(x * xSpace + xOffset, 3.75f), Quaternion.identity);
+            Instantiate(Brick3, new Vector2(x * xSpace + xOffset, 4.5f), Quaternion.identity);
         }
     }
 }
