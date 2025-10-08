@@ -308,8 +308,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookSpeed: 200
-  moveSpeed: 3
-  maxSpeed: 0
+  moveSpeed: 2
+  maxSpeed: 2
   bulletPrefab: {fileID: 4255778097326515697, guid: aa7e1e39a24a3fb4091ba572da2c08ab, type: 3}
 --- !u!1 &519420028
 GameObject:
@@ -432,6 +432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 493398a5fc73f82489ca686ce872a81d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rockPrefab: {fileID: 6598182724479933079, guid: 2603cc7338a15064986fa3a686f4b7d7, type: 3}
 --- !u!4 &921340501
 Transform:
   m_ObjectHideFlags: 0
