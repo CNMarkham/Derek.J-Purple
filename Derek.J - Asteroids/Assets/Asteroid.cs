@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class Asteroid : MonoBehaviour
 {
     public float speed;
-    public float minSize;
     
     // Start is called before the first frame update
     void Start()
@@ -20,15 +19,6 @@ public class Asteroid : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Destroy(collision.gameObject);
-
-        if (transform.localScale.x > minSize)
-        {
-            transform.localScale = transform.localScale * 0.5f;
-            Instantiate(gameObject, transform.position, Quaternion.identity);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        Destroy(gameObject);
     }
 }
