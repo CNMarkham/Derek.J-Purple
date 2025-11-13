@@ -6,14 +6,17 @@ public class Pellet : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
         if (collision.gameObject.CompareTag("Pacman"));
         {
+           
             Eat();
         }
     }
 
     protected virtual void Eat()
     {
-        gameObject.SetActive(false);
+        Debug.Log("hi");
+        this.gameObject.SetActive(false);
     }
 }
