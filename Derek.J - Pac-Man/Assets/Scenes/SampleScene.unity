@@ -8571,6 +8571,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 0
       dummyAlignment: 0
       m_AllTileFlags: 2
+  - first: {x: -8, y: -10, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 0
+      dummyAlignment: 0
+      m_AllTileFlags: 2
   - first: {x: -5, y: -10, z: 0}
     second:
       serializedVersion: 2
@@ -9043,13 +9053,13 @@ Tilemap:
       m_AllTileFlags: 2
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 63
+  - m_RefCount: 64
     m_Data: {fileID: 11400000, guid: 260a5eb6b41d653449205c0b817e2105, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 63
+  - m_RefCount: 64
     m_Data: {fileID: 21300000, guid: 4bc000208b108a84382f2be087c21210, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 63
+  - m_RefCount: 64
     m_Data:
       e00: 1
       e01: 0
@@ -9068,10 +9078,10 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 63
+  - m_RefCount: 64
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray:
-  - m_RefCount: 63
+  - m_RefCount: 64
     m_Data: {fileID: 2663992398489880170, guid: c60c2d3c5bf036d479e97efb160f9463, type: 3}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9266,6 +9276,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 8165050166512857046, guid: c8d81ecf8ccbd454fa7a08732fdf612a, type: 3}
+      propertyPath: m_Radius
+      value: 0.332562
+      objectReference: {fileID: 0}
+    - target: {fileID: 8165050166512857046, guid: c8d81ecf8ccbd454fa7a08732fdf612a, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0012631118
+      objectReference: {fileID: 0}
     - target: {fileID: 8208610632339828501, guid: c8d81ecf8ccbd454fa7a08732fdf612a, type: 3}
       propertyPath: m_Name
       value: Ghost_Pinky
@@ -9335,6 +9353,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5283753600539391513, guid: 6cdd51889af575c4b8ed3f06f87a07ac, type: 3}
+      propertyPath: m_Radius
+      value: 0.35214996
+      objectReference: {fileID: 0}
+    - target: {fileID: 5283753600539391513, guid: 6cdd51889af575c4b8ed3f06f87a07ac, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.016038418
+      objectReference: {fileID: 0}
     - target: {fileID: 5325906622901745370, guid: 6cdd51889af575c4b8ed3f06f87a07ac, type: 3}
       propertyPath: m_Name
       value: Ghost_Blinky
@@ -9350,6 +9376,14 @@ PrefabInstance:
     - target: {fileID: 7440124812687296842, guid: 6cdd51889af575c4b8ed3f06f87a07ac, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923944428482785438, guid: 6cdd51889af575c4b8ed3f06f87a07ac, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923944428482785438, guid: 6cdd51889af575c4b8ed3f06f87a07ac, type: 3}
+      propertyPath: obstaclelayer.m_Bits
+      value: 256
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9411,6 +9445,14 @@ PrefabInstance:
     - target: {fileID: 3298503794978203807, guid: 54caa7159fef07f46bf74fb6b73d39ec, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5361747972257261820, guid: 54caa7159fef07f46bf74fb6b73d39ec, type: 3}
+      propertyPath: m_Radius
+      value: 0.33548328
+      objectReference: {fileID: 0}
+    - target: {fileID: 5361747972257261820, guid: 54caa7159fef07f46bf74fb6b73d39ec, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.025441974
       objectReference: {fileID: 0}
     - target: {fileID: 5391375431036479551, guid: 54caa7159fef07f46bf74fb6b73d39ec, type: 3}
       propertyPath: m_Name
@@ -9488,6 +9530,14 @@ PrefabInstance:
     - target: {fileID: 2923222847263109193, guid: d5fa09cbb8a7fbc4e804bd7b084a3a75, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5710350299655893034, guid: d5fa09cbb8a7fbc4e804bd7b084a3a75, type: 3}
+      propertyPath: m_Radius
+      value: 0.36429718
+      objectReference: {fileID: 0}
+    - target: {fileID: 5710350299655893034, guid: d5fa09cbb8a7fbc4e804bd7b084a3a75, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.04408583
       objectReference: {fileID: 0}
     - target: {fileID: 5730266937907933417, guid: d5fa09cbb8a7fbc4e804bd7b084a3a75, type: 3}
       propertyPath: m_Name

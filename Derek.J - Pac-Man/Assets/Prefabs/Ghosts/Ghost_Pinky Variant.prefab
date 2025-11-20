@@ -24,6 +24,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost_Pinky Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3528881634791280559, guid: 11a56a7b3e7359b4287edd5862074180, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3528881634791280559, guid: 11a56a7b3e7359b4287edd5862074180, type: 3}
+      propertyPath: initialDirection.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6662281056914021686, guid: 11a56a7b3e7359b4287edd5862074180, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
