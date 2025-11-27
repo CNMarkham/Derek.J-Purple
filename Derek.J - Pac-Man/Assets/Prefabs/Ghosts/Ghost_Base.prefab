@@ -223,12 +223,12 @@ MonoBehaviour:
   obstaclelayer:
     serializedVersion: 2
     m_Bits: 256
-  body: {fileID: 0}
-  eyes: {fileID: 0}
-  blue: {fileID: 0}
-  white: {fileID: 0}
+  body: {fileID: 4201357379562862203}
+  eyes: {fileID: 8355111200273942859}
+  blue: {fileID: 6277994227240416063}
+  white: {fileID: 281913319705552966}
   atHome: 0
-  homwDuration: 0
+  homeDuration: 0
 --- !u!1 &4201357379562862203
 GameObject:
   m_ObjectHideFlags: 0

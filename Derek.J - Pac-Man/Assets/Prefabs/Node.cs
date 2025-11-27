@@ -11,7 +11,6 @@ public class Node : MonoBehaviour
     void Start()
     {
         availableDirections = new List<Vector2>();
-
         CheckAvailableDirection(Vector2.up);
         CheckAvailableDirection(Vector2.down);
         CheckAvailableDirection(Vector2.left);
