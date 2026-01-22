@@ -9,11 +9,13 @@ public class PlayerMovement : MonoBehaviour
 
     private RaycastHit2D hit;
     public float jumpForce;
+    private bool jumping;
     
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        jumping = false;
     }
 
     // Update is called once per frame
@@ -22,8 +24,10 @@ public class PlayerMovement : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
 
         rb.AddForce(Vector2.right * horizontal * movespeed * Time.deltaTime);
-
+        
+        FlipDirection();
         Jump();
+        ChangeAnimations();
     }
 
     private void Jump()
@@ -32,7 +36,38 @@ public class PlayerMovement : MonoBehaviour
 
         if (hit.collider != null && Input.GetKeyDown(KeyCode.Space))
         {
+            Vector3 velocity = rb.velocity;
+            velocity.y = jumpForce;
+            rb.velocity = velocity;
+            jumping = true;
+            Invoke("ResetJumping", 0.5f);
+        }
 
+        if (jumping && Input.GetKey(KeyCode.Space))
+        {
+            Vector3 velocity = rb.velocity;
+            velocity.y = jumpForce;
+            rb.velocity = velocity;
+        }
+    }
+    private void ResetJumping()
+    {
+        jumping = false;
+    }
+    private void FlipDirection()
+    {
+        foreach (SpriteRenderer sprite in GetComponentsInChildren<SpriteRenderer>())
+        {
+            sprite.flipX = rb.velocity.x < 0;
+        }
+    }
+    private void ChangeAnimations()
+    {
+        foreach (Animator animator in GetComponentsInChildren<Animator>())
+        {
+            animator.SetFloat("velocityX", rb.velocity.x);
+            animator.SetFloat("horizontalInput", Input.GetAxis("Horizontal"));
+            animator.SetBool("inAir", hit.collider == null || jumping);
         }
     }
 }
