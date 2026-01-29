@@ -37,10 +37,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 4
-    m_ConditionEvent: BM_HorizontalInput
+    m_ConditionEvent: horizontalInput
     m_EventTreshold: 0
   - m_ConditionMode: 3
-    m_ConditionEvent: BM_VelocityX
+    m_ConditionEvent: velocityX
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6592953504861341174}
@@ -65,10 +65,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 4
-    m_ConditionEvent: BM_HorizontalInput
+    m_ConditionEvent: horizontalInput
     m_EventTreshold: 0
   - m_ConditionMode: 4
-    m_ConditionEvent: BM_VelocityX
+    m_ConditionEvent: velocityX
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 9074589119405341315}
@@ -93,10 +93,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: BM_HorizontalInput
+    m_ConditionEvent: horizontalInput
     m_EventTreshold: 0
   - m_ConditionMode: 3
-    m_ConditionEvent: BM_VelocityX
+    m_ConditionEvent: velocityX
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 9074589119405341315}
@@ -121,7 +121,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: BM_InAir
+    m_ConditionEvent: in_Air
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 9074589119405341315}
@@ -146,7 +146,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: BM_VelocityX
+    m_ConditionEvent: velocityX
     m_EventTreshold: 0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 9074589119405341315}
@@ -230,7 +230,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 4
-    m_ConditionEvent: BM_VelocityX
+    m_ConditionEvent: velocityX
     m_EventTreshold: -0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 9074589119405341315}
@@ -255,10 +255,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: BM_HorizontalInput
+    m_ConditionEvent: horizontalInput
     m_EventTreshold: 0
   - m_ConditionMode: 4
-    m_ConditionEvent: BM_VelocityX
+    m_ConditionEvent: velocityX
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6592953504861341174}
@@ -283,24 +283,24 @@ AnimatorController:
   m_Name: BigMarioSprite
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: BM_VelocityX
+  - m_Name: velocityX
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: BM_HorizontalInput
+    m_Controller: {fileID: 0}
+  - m_Name: horizontalInput
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: BM_InAir
+    m_Controller: {fileID: 0}
+  - m_Name: in_Air
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -323,7 +323,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: BM_InAir
+    m_ConditionEvent: in_Air
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2775986483378927399}
@@ -377,7 +377,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: BM_InAir
+    m_ConditionEvent: in_Air
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4026638888058086360}
@@ -402,7 +402,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: BM_InAir
+    m_ConditionEvent: in_Air
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2775986483378927399}
@@ -427,10 +427,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: BM_VelocityX
+    m_ConditionEvent: velocityX
     m_EventTreshold: -0.1
   - m_ConditionMode: 4
-    m_ConditionEvent: BM_VelocityX
+    m_ConditionEvent: velocityX
     m_EventTreshold: 0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4026638888058086360}
